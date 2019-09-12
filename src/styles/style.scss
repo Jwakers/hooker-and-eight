@@ -1,7 +1,16 @@
 @import url("https://use.typekit.net/ffr6whl.css");
 @import url("https://use.typekit.net/ffr6whl.css");
 
-@import './base/_globals';
 @import './base/_variables.scss';
+@import './base/_globals';
+@import './base/_mixins';
+@import './base/_grid';
 
+@import './modules/_container';
+@import './modules/_header';
+@import './modules/_nav';
+@import './modules/_hero';
+@import './modules/_btn';
+@import './modules/_box';
+@import './modules/_page-section';
 

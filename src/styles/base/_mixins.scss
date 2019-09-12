@@ -1,0 +1,38 @@
+@mixin atSmall {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin atMedium {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin atLarge {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin atXlarge {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin center {
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin center-x {
+    left:50%;
+    transform: translateX(-50%);
+}
+
+@mixin center-y {
+    top: 50%;
+    transform: translateY(-50%);
+}

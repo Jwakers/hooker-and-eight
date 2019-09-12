@@ -1,5 +1,15 @@
 $mainRed: #bd1b1b;
 $darkRed: #a31717;
 $lightRed: #db1f1f;
-$redGradient: linear-gradient($lightRed, $darkRed, -61deg);
+$darkBlue: #175fa3;
+$lightBlue: #1b6fbd;
+$darkGreen: #17a32c;
+$lightGreen: #1bbd32;
 $darkGrey: #212121;
+
+$redGradient: linear-gradient(60deg, $lightRed, $darkRed);
+$greenGradient: linear-gradient(60deg, $lightBlue, $darkBlue);
+$blueGradient: linear-gradient(60deg, $lightGreen, $darkGreen);
+
+$shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+$lightShadow: 4px 0 10px rgba(0, 0, 0, .1);

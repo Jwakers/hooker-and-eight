@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    &--gap {
+        grid-gap: 1rem;
+    }
+    &--3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &--5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    &--align-end {
+        align-items: end;
+    }
+    &__6 {
+        display: grid;
+        grid-column: span 6;
+    }
+
+}
