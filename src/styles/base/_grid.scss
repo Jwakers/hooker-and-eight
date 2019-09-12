@@ -4,18 +4,56 @@
     &--gap {
         grid-gap: 1rem;
     }
+    &--1 {
+        grid-template-columns: 1fr;
+    }
     &--3 {
         grid-template-columns: repeat(3, 1fr);
     }
     &--5 {
         grid-template-columns: repeat(5, 1fr);
     }
-    &--align-end {
-        align-items: end;
+    &--align-center {
+        align-items: center;
+    }
+    &__4 {
+        grid-column: span 4;
+    }
+    &__5 {
+        grid-column: span 5;
     }
     &__6 {
-        display: grid;
         grid-column: span 6;
     }
+    &__7 {
+        grid-column: span 7;
+    }
+    &__8 {
+        grid-column: span 8;
+    }
+    @include atSmall {
 
+    }
+    @include atMedium {
+        &--md-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__md-3 {
+            grid-column: span 3;
+        }
+        &__md-9 {
+            grid-column: span 9;
+        }
+    }
+    @include atLarge {
+        &__lg-5 {
+            grid-column: span 5;
+        }
+        &__lg-6 {
+            grid-column: span 6;
+        }
+        &__lg-7 {
+            grid-column: span 7;
+        }
+    }
 }

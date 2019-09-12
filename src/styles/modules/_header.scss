@@ -1,7 +1,15 @@
 .header {
-    padding: 1rem 0;
+    padding: .1rem 0;
     position: absolute;
     width: 100%;
     z-index: 10;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0.6), transparent)
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.6), transparent);
+    transition: .4s;
+
+    &--open {
+        background: $darkGrey;
+    }
+    @include atMedium {
+        padding: 1rem 0;
+    }
 }

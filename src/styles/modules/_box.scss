@@ -3,6 +3,7 @@
     box-shadow: $lightShadow;
     padding: 1.2rem;
     position: relative;
+    background-color: #fff;
 
     &--m-top {
         margin-top: 125px;
@@ -14,10 +15,10 @@
             display: block;
             overflow: hidden;
             @include center-x;
-            top: -125px;
-            margin-bottom: -125px;
+            top: -144px;
+            margin-bottom: -144px;
             width: 250px;
-            height: 250px;
+            max-height: 250px;
             border-radius: 50%;
             border: solid 8px white;
         }

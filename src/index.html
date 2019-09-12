@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hooker & Eight</title>
 </head>
+
 <body>
     <header class="header">
-        <div class="container grid grid--align-end">
-            <div class="grid__6">
+        <div class="container grid grid--align-center">
+            <div class="grid__6 grid__md-3 grid__lg-5">
                 <a href="./">
                     <img src="assets/images/logo.png" alt="Hooker and Eight logo" />
                 </a>
             </div>
-            <nav class="nav grid__6">
-                <div class="grid grid--5">
-                    <a class="nav__item"  href="./">menu</a>
-                    <a class="nav__item"  href="./">about</a>
-                    <a class="nav__item"  href="./">offers</a>
-                    <a class="nav__item"  href="./">gallery</a>
-                    <a class="nav__item"  href="./">find us</a>
+            <nav class="nav grid__6 grid__md-9 grid__lg-7">
+                <div class="nav__menu grid grid--5">
+                    <a class="nav__item" href="./">menu</a>
+                    <a class="nav__item" href="./">about</a>
+                    <a class="nav__item" href="./">offers</a>
+                    <a class="nav__item" href="./">gallery</a>
+                    <a class="nav__item" href="./">find us</a>
+                </div>
+                <div class="nav__menu-icon">
+                    <div class="nav__menu-icon__middle"></div>
                 </div>
             </nav>
         </div>
     </header>
     <div class="hero">
-        <img class="hero__img" src="https://image.freepik.com/free-photo/slice-delicious-pizza-with-ingredients-textured-wooden-background_23-2147926094.jpg" alt="" />
+        <img class="hero__img"
+            src="https://image.freepik.com/free-photo/slice-delicious-pizza-with-ingredients-textured-wooden-background_23-2147926094.jpg"
+            alt="" />
         <div class="container">
             <div class="hero__con">
                 <h1 class="hero__con__head">handmade pizza</h1>
@@ -42,17 +49,73 @@
         </div>
     </div>
 
-    <div class="page-section">
+    <div class="page-section page-section--gradient-rainbow">
 
         <div class="container">
-            <div class="grid grid--3 grid--gap">
+            <div class="grid grid--1 grid--md-3 grid--gap">
                 <div class="box box--m-top">
-                    <img class="box__img box__img--circle" src="./assets/images/handmade-pizza.jpg" alt="Hand-rolling pizza dough" />
+                    <img class="box__img box__img--circle" src="./assets/images/handmade-pizza.png"
+                        alt="Hand-rolling pizza dough" />
                     <h3 class="box__head box__head--underline">All fresh, all handmade</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio repellat non totam distinctio nam hic aperiam accusamus ratione, iure accusantium sapiente ipsum sequi commodi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio repellat non totam
+                        distinctio nam hic aperiam accusamus ratione, iure accusantium sapiente ipsum sequi commodi.</p>
+                </div>
+
+                <div class="box box--m-top">
+                    <img class="box__img box__img--circle" src="./assets/images/vegatables.png"
+                        alt="Hand-rolling pizza dough" />
+                    <h3 class="box__head box__head--underline  box__head--underline--green">Vegatarian &amp; vegan
+                        options</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa temporibus nam qui ipsam
+                        sunt optio. Eveniet vitae atque laborum sapiente dicta odio vero necessitatibus repudiandae
+                        nemo.</p>
+                </div>
+
+                <div class="box box--m-top">
+                    <img class="box__img box__img--circle" src="./assets/images/restaurant.png"
+                        alt="Hand-rolling pizza dough" />
+                    <h3 class="box__head box__head--underline  box__head--underline--blue">Eat in or takeaway</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias perferendis assumenda, quos
+                        quisquam odio repellat fuga distinctio hic, magnam sed ducimus eius!</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="page-section page-section--angled">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__6">
+                    <h2 class="heading">The star of the show</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                    <div class="grid">
+                        <ul class="grid__6 menu-list">
+                            <li>margherita</li>
+                            <li>pepperoni</li>
+                            <li>veggie</li>
+                            <li>mediterranean</li>
+                        </ul>
+                        <ul class="grid__6 menu-list">
+                            <li>vegan bbq</li>
+                            <li>four cheese</li>
+                            <li>mexican</li>
+                            <li class="color-red">and many more...</li>
+                        </ul>
+                    </div>
+                    <a href="./" class="btn btn--grey btn--wide">see our menu</a>
+                </div>
+                <div class="grid__6">
+                    <img class="m-auto" src="assets/images/pizza-1.png" alt="pizza" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="gri__6"></div>
+        <div class="gri__6"></div>
+    </div>
+
 </body>
+
 </html>

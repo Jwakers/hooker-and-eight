@@ -8,42 +8,56 @@
     &__mouse {
         position: absolute;
         bottom: 40px;
-        left: 50%;
-        transform: translateY(-50%);
+        display: none;
+        @include center-x;
+        @include atMedium {
+            display: block;
+        }
     }
     &__con {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include center;
         text-align: center;
+        margin-top: .8rem;
+        @include atMedium {
+            margin-top: 0;
+        }
 
         &__head {
             color: #fff;
-            font-size: 3rem;
+            font-size: 1.4rem;
             font-weight: normal;
             margin: 0;
             text-transform: uppercase;
             font-family: los-feliz, serif;
             letter-spacing: 4px;
+            @include atMedium {
+                font-size: 3rem;
+            }
         }
         &__sub {
             color: #fff;
-            font-size: 2.6rem;
+            font-size: 1.2rem;
             text-transform: capitalize;
             letter-spacing: 4px;
             background-image: $redGradient;
-            padding: 1rem 2rem;
+            padding: .6rem 1rem;
             white-space: nowrap;
             margin-top: -1rem;
             margin-bottom: 1rem;
             box-shadow: $shadow;
+            @include atMedium {
+                font-size: 2.6rem;
+            }
         }
         &__btns {
-            padding: 2rem 0;
-            font-size: 1.2rem;
+            padding: .5rem 0;
             .btn {
                 margin: 0 .4rem;
+            }
+            @include atMedium {
+                padding: 2rem 0;
+                font-size: 1.2rem;
             }
         }
     }
