@@ -1,0 +1,22 @@
+.footer {
+    background-image: $redGradient;
+    border-top: solid 2px rgba(0, 0, 0, 0.4);
+    color: #fff;
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        color: #fff;
+        font-size: .8rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+        
+        li {
+            margin: .5rem 0;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

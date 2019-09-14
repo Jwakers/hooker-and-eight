@@ -16,6 +16,8 @@
     }
     &__con {
         position: absolute;
+        width: 100%;
+        max-width: auto;
         @include center;
         text-align: center;
         margin-top: .8rem;
@@ -25,27 +27,36 @@
 
         &__head {
             color: #fff;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: normal;
             margin: 0;
             text-transform: uppercase;
             font-family: los-feliz, serif;
             letter-spacing: 4px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+            @include atSmall {
+                font-size: 2rem;;
+            }
             @include atMedium {
                 font-size: 3rem;
             }
         }
         &__sub {
             color: #fff;
-            font-size: 1.2rem;
+            display: inline-block;
+            font-size: 1.1rem;
             text-transform: capitalize;
             letter-spacing: 4px;
             background-image: $redGradient;
             padding: .6rem 1rem;
-            white-space: nowrap;
-            margin-top: -1rem;
-            margin-bottom: 1rem;
             box-shadow: $shadow;
+            white-space: nowrap;
+            @include atSmall {
+                font-size: 1.6rem;
+                white-space: nowrap;
+            }
             @include atMedium {
                 font-size: 2.6rem;
             }

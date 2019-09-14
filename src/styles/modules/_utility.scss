@@ -5,3 +5,14 @@
 .color-red {
     color: $mainRed;
 }
+
+.relative-center {
+    position: relative;
+    @include center-x;
+    &--mob {
+        @include atMedium {
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+}

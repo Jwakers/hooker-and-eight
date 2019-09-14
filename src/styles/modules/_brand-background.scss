@@ -1,0 +1,19 @@
+.brand-background {
+    background-image: $redGradient;
+    color: white;
+    padding: 3rem 0 4rem 0;
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-image: url('../assets/images/main-logo.png');
+        background-color: $mainRed;
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: -20%;
+        opacity: 0.15;
+    }
+}

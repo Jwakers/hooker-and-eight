@@ -2,4 +2,16 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+
+    &--half {
+        max-width: 600px;
+        margin: 0;
+        @include atMedium {
+            padding-left: 5rem;
+        }
+    }
+    &--top-border {
+        border-top: 8px solid $darkGrey;
+        margin-bottom: 2rem;
+    }
 }
