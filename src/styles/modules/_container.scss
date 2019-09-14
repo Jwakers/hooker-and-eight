@@ -2,12 +2,22 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    position: relative;
 
-    &--half {
+    &--half-right {
         max-width: 600px;
         margin: 0;
+        padding-right: 0;
         @include atMedium {
             padding-left: 5rem;
+        }
+    }
+    &--half-left {
+        max-width: 600px;
+        margin: 0;
+        padding-left: 0;
+        @include atMedium {
+            padding-right: 5rem;
         }
     }
     &--top-border {
