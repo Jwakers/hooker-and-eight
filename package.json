@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Jwakers/hooker-and-eight#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",

@@ -1,0 +1,14 @@
+.social-icons {
+    margin: 1.6rem 0;
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
+    @include center-x;
+    .svg-inline--fa {
+        margin: 0 .8rem;
+        transition: transform .2s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
