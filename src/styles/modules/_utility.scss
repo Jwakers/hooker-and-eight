@@ -6,6 +6,10 @@
     color: $mainRed;
 }
 
+.color-green {
+    color: $darkGreen;
+}
+
 .relative-center {
     position: relative;
     @include center-x;

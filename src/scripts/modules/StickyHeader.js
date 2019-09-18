@@ -25,9 +25,8 @@ export default class StickyHeader {
         }
       }
     stickyHandler() {
-        const callback = console.log(event);
         const header = this.header;
-        window.addEventListener('scroll', this.throttle((event) => {
+        window.addEventListener('scroll', this.throttle(() => {
             if (window.pageYOffset > header.offsetHeight) {
                 header.classList.add('header--reduce');
             } else {

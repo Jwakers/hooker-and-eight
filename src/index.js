@@ -8,6 +8,7 @@ import MobileMenu from './scripts/modules/MobileMenu';
 import Map from './scripts/modules/Maps';
 import ShowOnScroll from './scripts/modules/showOnScroll';
 import StickyHeader from './scripts/modules/StickyHeader';
+import MenuTable from './scripts/modules/MenuTable';
 
 new MobileMenu();
 
@@ -20,3 +21,4 @@ Map.loadGoogleMapsApi().then(function(googleMaps) {
 
 new ShowOnScroll();
 new StickyHeader();
+new MenuTable();

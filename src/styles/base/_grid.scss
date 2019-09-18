@@ -4,6 +4,9 @@
     &--gap {
         grid-gap: 1rem;
     }
+    &--gap-large {
+        grid-gap: 2.4rem;
+    }
     &--1 {
         grid-template-columns: 1fr;
     }
@@ -61,5 +64,18 @@
         &__lg-7 {
             grid-column: span 7;
         }
+    }
+}
+.justify-self-end {
+    justify-self: end;
+}
+
+.flex {
+    display: flex;
+    &--center {
+        align-items: center;
+    }
+    &--spaced {
+        justify-content: space-between;
     }
 }

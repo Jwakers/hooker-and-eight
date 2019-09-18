@@ -1,0 +1,45 @@
+.menu-item {
+    position: relative;
+    transition: .2s;
+    opacity: 0;
+    &--active {
+        opacity: 1;
+    }
+    &__top {
+        position: relative;
+    }
+    &__name {
+        display: inline-block;
+        padding: .8rem 1rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: los-feliz, serif;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        background-image: $redGradient;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        box-shadow: $shadow;
+    }
+    &__desc {
+        border-bottom: 1px solid rgba($darkGrey, .2);
+        padding-bottom: .8rem;
+        margin-bottom: .5rem;
+    }
+    &__sum {
+        font-weight: 600;
+        font-size: 1.2rem;
+        &__from {
+            font-family: los-feliz, serif;
+            color: $mainRed;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        &__small {
+            font-weight: normal;
+            font-size:.8rem;
+        }
+    }
+
+}

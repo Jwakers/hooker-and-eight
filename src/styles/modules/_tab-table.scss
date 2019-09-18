@@ -1,0 +1,35 @@
+.tab-table {
+    border-top: 1px solid rgba($darkGrey, .4);
+    margin-top: 1rem;
+    &__menu {
+        margin-bottom: 1.4rem;
+        box-shadow: inset 0px 6px 8px -6px rgba(0, 0, 0, 0.4);
+        &__item {
+            display: inline-block;
+            font-family: los-feliz, serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: .6rem 1rem;
+            border: 1px solid rgba($darkGrey, .2);
+            border-radius: 0 0 4px 4px;
+            box-shadow: none;
+            transition: .2s;
+            cursor: pointer;
+            &--active {
+                background-image: $redGradient;
+                color: #fff;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+                padding: .8rem 1.6rem;
+            }
+        }
+    }
+    &__section {
+        transition: .2s;
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+
+
+}

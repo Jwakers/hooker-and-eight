@@ -2,10 +2,32 @@
     width: 30px;
     height: 30px;
     font-family: los-feliz, serif;
-
-    ::after {
-        content: '';
-        display: inline-block;
-        
+    font-size: .8rem;
+    color: $darkGreen;
+    border-radius: 50px;
+    border: 3px solid;
+    min-width: 16px;
+    min-height: 16px;
+    position: relative;
+    display: inline-block;
+    &::after {
+        position: absolute;
+        @include center;
+    }
+    &--vegan {
+        &::after {
+            content: 'Ve';
+        }
+    }
+    &--vegatarian {
+        &::after {
+            content: 'V';
+        }
+    }
+    &--spicy {
+        color: $mainRed;
+        &::after {
+            content: 'S';
+        }
     }
 }
