@@ -1,0 +1,11 @@
+.diet-icon {
+    width: 30px;
+    height: 30px;
+    font-family: los-feliz, serif;
+
+    ::after {
+        content: '';
+        display: inline-block;
+        
+    }
+}

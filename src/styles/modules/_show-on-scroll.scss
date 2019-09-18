@@ -1,0 +1,11 @@
+.show-on-scroll {
+    opacity: 0;
+    transition: 1s;
+    position: relative;
+    top: 20px;
+
+    &--showing {
+        opacity: 1;
+        top: 0px;
+    }
+}

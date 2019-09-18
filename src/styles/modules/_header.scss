@@ -1,14 +1,29 @@
 .header {
     padding: .1rem 0;
-    position: absolute;
     width: 100%;
     z-index: 10;
-    background-image: linear-gradient(180deg, rgba(0,0,0,0.6), transparent);
+    background-color: $darkGrey; 
     transition: .4s;
     @include atMedium {
         padding: 1rem 0;
     }
+    &__logo {
+        max-width: 100%;
+        transition: 0.4s;
+    }
+    &--home {
+        position: fixed;
+        background-color: initial;
+    }
     &--open {
-        background: $darkGrey;
+        background-color: $darkGrey;
+    }
+    &--reduce {
+        background-color: $darkGrey;
+        padding: .4rem 0;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+        .header__logo {
+            max-width: 180px;
+        }
     }
 }
