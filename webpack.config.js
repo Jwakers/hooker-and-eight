@@ -5,9 +5,8 @@ const path = require('path');
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: '[name].js',
-        path: __dirname + '/docs',
-        publicPath: '/'
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'docs')
     },
     module: {
         rules:
@@ -22,7 +21,7 @@ module.exports = {
                     }
                 },
                 {
-                    test: /\.(sa|sc|c)ss$/,
+                    test: /\.(scss|css)$/,
                     use: [
                     //   {
                     //     loader: MiniCssExtractPlugin.loader,
