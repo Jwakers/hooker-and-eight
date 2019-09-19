@@ -5,7 +5,7 @@ export default class ShowOnScroll {
 
   observer() {
     const options = {
-      threshold: 0.4
+      threshold: 0.2
     }
     let observer = new IntersectionObserver(function(entries) {
       entries.forEach(entry => {

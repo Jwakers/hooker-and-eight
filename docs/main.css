@@ -411,7 +411,8 @@ p a {
   width: 100%;
   z-index: 10;
   background-color: #212121;
-  transition: .4s; }
+  transition: .4s;
+  position: fixed; }
   @media (min-width: 768px) {
     .header {
       padding: 1rem 0; } }
@@ -419,7 +420,6 @@ p a {
     max-width: 100%;
     transition: 0.4s; }
   .header--home {
-    position: fixed;
     background-color: initial; }
   .header--open {
     background-color: #212121; }
@@ -665,6 +665,11 @@ p a {
 .page-section {
   padding: 2rem 0;
   position: relative; }
+  .page-section--top {
+    padding-top: 5rem; }
+    @media (min-width: 768px) {
+      .page-section--top {
+        padding-top: 6.3rem; } }
   .page-section--gradient-rainbow {
     background-color: #eee; }
     .page-section--gradient-rainbow::after {

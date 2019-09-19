@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -13,27 +14,28 @@ module.exports = {
         rules:
             [
                 {
-                    test: /\.html$/,
+                    test: /\.html/,
                     use: {
                         loader: 'html-loader',
                         options: {
                             minimize: true,
-                            interpolate: true }
+                            interpolate: true
+                        }
                     }
                 },
                 {
                     test: /\.(scss|css)$/,
                     use: [
-                      {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: process.env.NODE_ENV === 'development'
+                        {
+                            loader: MiniCssExtractPlugin.loader,
+                            options: {
+                                // hmr: process.env.NODE_ENV === 'development'
+                            },
                         },
-                      },
-                      'css-loader',
-                      'sass-loader',
+                        'css-loader',
+                        'sass-loader',
                     ],
-                  },
+                },
                 {
                     test: /\.(png|jp(e*)g|svg)$/,
                     use: [
@@ -50,15 +52,14 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].css'
-            // chunkFilename: '[id].css',
-          }),
-            new HtmlWebpackPlugin({
-                template: './src/index.html',
-                filename: 'index.html'
-            }),
-            new HtmlWebpackPlugin({
-                template: './src/menu.html',
-                filename: 'menu.html'
-            })
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/menu.html',
+            filename: 'menu.html'
+        })
     ]
 }
