@@ -2,9 +2,13 @@ export default class ModalBox {
     constructor(elements, modalSource) {
         this.elements = document.querySelectorAll(elements);
         this.modalSource = modalSource;
+        this.allSources = Array.from(this.elements).map(el => el.getAttribute(modalSource));
+        this.currentIndex = 0;
+        this.indexMax = this.allSources.length;
         this.init();
     }
     addEvents() {
+        console.log(this.allSources, this.currentIndex, this.indexMax);
         this.elements.forEach(el => {
             el.addEventListener('click', this.openModal.bind(this))
         })
@@ -19,7 +23,7 @@ export default class ModalBox {
         <div class="modal__control modal__control--left"></div>
         <div class="modal__control modal__control--right"></div>
             <div class="modal__con">
-                <img class="gallery__img" src="${src}" />
+                <img class="modal__con__img" src="${src}" />
             </div>
         </div>
         `;
@@ -27,23 +31,51 @@ export default class ModalBox {
     }
     openModal() {
         const markup = this.getMarkup(event.currentTarget);
-        console.log(markup);
         document.querySelector('body').insertAdjacentHTML('afterbegin', markup);
-
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                document.querySelector('.modal').classList.add('modal--active');
+            });
+        })
+        const source = event.currentTarget.getAttribute(this.modalSource);
+        this.setIndex(source)
         this.controlEvents();
+    }
+    setIndex(source) {
+        this.currentIndex = this.allSources.findIndex(el => el === source);
     }
     controlEvents() {
         const modal = document.querySelector('.modal');
-
         modal.addEventListener('click', () => {
             if (event.target.classList.contains('modal__control--right')) {
-                console.log('Right');
+                this.control('right')
             } else if (event.target.classList.contains('modal__control--left')) {
-                console.log('Left');
-            } else if (event.target.classList.contains('modal__close')) {
-                console.log('Close');
+                this.control('left');
+            } else {
+                this.closeModal();
             }
         })
+    }
+    closeModal() {
+      const modal = document.querySelector('.modal');
+      modal.parentNode.removeChild(modal);
+    }
+    control(direction) {
+        const modalContent = document.querySelector('.modal__con__img');
+        if (direction === 'right') {
+            if (this.currentIndex < this.indexMax - 1) {
+                this.currentIndex++;
+            } else {
+                this.currentIndex = 0;
+            }
+        } else if (direction === 'left') {
+            if (this.currentIndex === 0) {
+                this.currentIndex = this.indexMax - 1;
+            } else {
+                this.currentIndex--;
+            }
+        }
+        modalContent.setAttribute('src', this.allSources[this.currentIndex]);
     }
     init () {
         this.addEvents();
