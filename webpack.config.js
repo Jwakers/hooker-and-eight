@@ -8,6 +8,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'docs')
     },
+    devtool: 'source-map',
     module: {
         rules:
             [
@@ -23,26 +24,33 @@ module.exports = {
                 {
                     test: /\.(scss|css)$/,
                     use: [
-                    //   {
-                    //     loader: MiniCssExtractPlugin.loader,
-                    //     options: {
-                    //     },
-                    //   },
-                      'style-loader',
+                      {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: process.env.NODE_ENV === 'development'
+                        },
+                      },
                       'css-loader',
                       'sass-loader',
                     ],
                   },
                 {
                     test: /\.(png|jp(e*)g|svg)$/,
-                    use: ['url-loader']
+                    use: [
+                        {
+                            loader: 'url-loader',
+                            options: {
+                                limit: 8192,
+                                outputPath: 'assets/images'
+                            }
+                        }]
                 }
             ]
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: '[name].css',
-            chunkFilename: '[id].css',
+            filename: '[name].css'
+            // chunkFilename: '[id].css',
           }),
             new HtmlWebpackPlugin({
                 template: './src/index.html',
