@@ -4,14 +4,30 @@
         opacity: 1;
         transition: .2s;
         overflow: hidden;
+        position: relative;
         &:hover {
             opacity: .9;
             .gallery__img {
                 transform: scale(1.04);
             }
+            .gallery__caption {
+                bottom: -50%;
+            }
         }
     }
     &__img {
         transition: 0.2s;
+    }
+    &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        width: 100%;
+        transition: .2s;
+        font-size: .8rem;
+        font-weight: 100;
     }
 }
