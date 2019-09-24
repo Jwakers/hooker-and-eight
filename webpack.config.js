@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -42,6 +41,7 @@ module.exports = {
                         {
                             loader: 'url-loader',
                             options: {
+                                name: '[name].[ext]',
                                 limit: 8192,
                                 outputPath: 'assets/images'
                             }

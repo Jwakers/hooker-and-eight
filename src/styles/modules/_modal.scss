@@ -16,8 +16,17 @@
         width: 100%;
     }
     &__con {
+        max-width: 84%;
+        max-height: 84%;
         position: absolute;
         @include center;
+
+        &__caption {
+            margin: 1rem auto;
+            text-align: center;
+            background-color: #fff;
+            padding: 1rem;
+        }
     }
     &__close {
         position: absolute;
@@ -31,6 +40,7 @@
             transform: scale(1.1);
         }
     }
+    
     &__control {
         position: absolute;
         @include center-y;

@@ -36,7 +36,9 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.6.0",
     "google-maps": "^3.3.0",
+    "intersection-observer": "^0.7.0",
     "load-google-maps-api": "^2.0.1",
     "normalize.css": "^8.0.1",
     "npm": "^6.11.3",

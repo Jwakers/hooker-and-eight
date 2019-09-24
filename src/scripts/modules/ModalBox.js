@@ -14,9 +14,9 @@ export default class ModalBox {
         })
     }
     getMarkup(el) {
-        console.log(this.modalSource);
-        console.log(el);
         const src = el.getAttribute(this.modalSource);
+        const figCaption = el.querySelector('.gallery__caption');
+        const caption = figCaption ? figCaption.innerHTML : false ;
         const markup = `
         <div class="modal">
         <div class="modal__close">&times;</div>
@@ -24,6 +24,7 @@ export default class ModalBox {
         <div class="modal__control modal__control--right"></div>
             <div class="modal__con">
                 <img class="modal__con__img" src="${src}" />
+                ${caption ? `<div class="modal__con__caption">${caption}</div>` : `` }
             </div>
         </div>
         `;
