@@ -3,6 +3,7 @@ export default class ModalBox {
         this.elements = document.querySelectorAll(elements);
         this.modalSource = modalSource;
         this.allSources = Array.from(this.elements).map(el => el.getAttribute(modalSource));
+        this.allCaptions = Array.from(this.elements).map(el => el.querySelector('.gallery__caption'));
         this.currentIndex = 0;
         this.indexMax = this.allSources.length;
         this.init();
@@ -63,6 +64,7 @@ export default class ModalBox {
     }
     control(direction) {
         const modalContent = document.querySelector('.modal__con__img');
+        const modalCaption = document.querySelector('.modal__con__caption');
         if (direction === 'right') {
             if (this.currentIndex < this.indexMax - 1) {
                 this.currentIndex++;
@@ -77,6 +79,8 @@ export default class ModalBox {
             }
         }
         modalContent.setAttribute('src', this.allSources[this.currentIndex]);
+        modalCaption.innerHTML = this.allCaptions[this.currentIndex].innerHTML;
+        console.log(this.allCaptions);
     }
     init () {
         this.addEvents();
