@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="page-container">
     <header class="header header--home">
         ${require('./partials/header.html')}
     </header>
@@ -17,8 +18,8 @@
             <h1 class="hero__con__head">handmade pizza</h1>
             <div class="hero__con__sub">the way it was intended</div>
             <div class="hero__con__btns">
-                <a href="menu" class="btn btn--wide">menu</a>
-                <a class="btn btn--wide btn--white">find us</a>
+                <a href="./menu.html" class="btn btn--wide">menu</a>
+                <a href="./find-us.html" class="btn btn--wide btn--white">find us</a>
             </div>
         </div>
         <!-- <div class="hero__mouse">
@@ -128,16 +129,19 @@
                         <li>gloucester</li>
                         <li>gl1 2nw</li>
                     </ul>
-                    <a href="" class="btn btn--grey relative-center relative-center--mob">contact us</a>
+                    <a href="./find-us.html" class="btn btn--grey relative-center relative-center--mob">contact us</a>
                 </div>
                 </div>
 
                 <div class="grid__12 grid__md-6">
-                    <div class="google-map"></div>
+                    <div class="google-map">
+                            <iframe class="google-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2463.7125080481987!2d-2.249885383510918!3d51.86620537969575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871067b34a09c6b%3A0xa4117924a538b6cd!2s49%20Westgate%20St%2C%20Gloucester%20GL1%202NW!5e0!3m2!1sen!2suk!4v1569517171736!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     ${require('./partials/footer.html')}
+    </div>
 </body>
 </html>

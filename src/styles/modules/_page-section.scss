@@ -1,12 +1,7 @@
 .page-section {
     padding: 2rem 0;
     position: relative;
-
-    &--full {
-        min-height: 100%;
-        margin-bottom: -300px;
-    }
-
+    
     &--top {
         padding-top: 5rem;
         @include atMedium {

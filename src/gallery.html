@@ -9,15 +9,16 @@
 </head>
 
 <body>
+        <div class="page-container">
     <header class="header">
         ${require('./partials/header.html')}
     </header>
 
-    <div class="page-section page-section--top page-section--full">
+    <div class="page-section page-section--top">
         <div class="container">
             <h1 class="heading heading--center heading--upper">gallery</h1>
 
-            <div class="gallery grid grid--5">
+            <div class="gallery grid grid--2 grid--md-4 grid--lg-5">
                 <div class="gallery__box" data-modal="/assets/images/dan-and-adam.jpg">
                     <figure>
                         <img class="gallery__img" src="./assets/images/dan-and-adam.jpg" />
@@ -82,6 +83,7 @@
         </div>
     </div>
     ${require('./partials/footer.html')}
+    </div>
 </body>
 
 </html>

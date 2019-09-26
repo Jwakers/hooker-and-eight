@@ -7,7 +7,6 @@ import '@fortawesome/fontawesome-free/js/brands';
 import '@babel/polyfill';
 import 'intersection-observer';
 import MobileMenu from './scripts/modules/MobileMenu';
-import Map from './scripts/modules/Maps';
 import ShowOnScroll from './scripts/modules/ShowOnScroll';
 import StickyHeader from './scripts/modules/StickyHeader';
 import MenuTable from './scripts/modules/MenuTable';
@@ -16,11 +15,6 @@ import ModalBox from './scripts/modules/ModalBox';
 new MobileMenu();
 
 const mapElement = document.querySelector('.google-map');
-
-Map.loadGoogleMapsApi().then(function(googleMaps) {
-    Map.createMap(googleMaps, mapElement);
-  });
-
 
 new ShowOnScroll();
 new StickyHeader();

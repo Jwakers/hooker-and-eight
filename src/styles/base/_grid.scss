@@ -10,11 +10,24 @@
     &--1 {
         grid-template-columns: 1fr;
     }
+    &--2 {
+        grid-template-columns: 2fr 2fr;
+    }
     &--3 {
         grid-template-columns: repeat(3, 1fr);
     }
     &--5 {
         grid-template-columns: repeat(5, 1fr);
+    }
+    @include atMedium {
+        &--md-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    @include atLarge {
+        &--lg-5 {
+            grid-template-columns: repeat(5, 1fr);
+        }
     }
     &--align-center {
         align-items: center;
