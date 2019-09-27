@@ -9,206 +9,443 @@
 </head>
 
 <body>
-        <div class="page-container">
-    <header class="header">
-        ${require('./partials/header.html')}
-    </header>
-    <div class="page-section page-section--top">
-        <div class="container">
-            <h1 class="heading heading--center heading--upper">our menu</h1>
-            <div class="grid">
-                <div class="grid__12 grid__md-6">
-                    <h2 class="heading heading--small">Taste the best</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus illo quia doloremque voluptas
-                        repellat quos quam aspernatur, modi exercitationem et! Aut exercitationem harum ullam nulla.</p>
-                </div>
-                <div class="grid__12 grid__md-6"></div>
-            </div>
-            <div class="grid">
-                <div class="grid__12 justify-self-md-end">
-                    <div class="flex flex--center flex--spaced">
-                        <div class="diet-icon diet-icon--x-margin diet-icon--vegan"></div>
-                        <span class="diet-icon__text color-green">Vegan</span>
-                        <div class="diet-icon diet-icon--x-margin diet-icon--vegatarian"></div>
-                        <span class="diet-icon__text color-green">Vegetarian</span>
-                        <div class="diet-icon diet-icon--x-margin diet-icon--spicy"></div>
-                        <span class="diet-icon__text color-red">Spicy</span>
+    <div class="page-container">
+        <header class="header">
+            ${require('./partials/header.html')}
+        </header>
+        <div class="page-section page-section--top">
+            <div class="container">
+                <h1 class="heading heading--center heading--upper">our menu</h1>
+                <div class="grid">
+                    <div class="grid__12 grid__md-6">
+                        <h2 class="heading heading--small">Taste the best</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus illo quia doloremque voluptas
+                            repellat quos quam aspernatur, modi exercitationem et! Aut exercitationem harum ullam nulla.
+                        </p>
                     </div>
+                    <div class="grid__12 grid__md-6"></div>
                 </div>
-            </div>
-
-            <div class="tab-table">
-                <div class="tab-table__menu">
-                    <div class="tab-table__menu__item tab-table__menu__item--active" data-item="pizza">pizza</div>
-                    <div class="tab-table__menu__item" data-item="sides">sides</div>
-                    <div class="tab-table__menu__item" data-item="drinks">drinks</div>
-                    <div class="tab-table__menu__item" data-item="other">other</div>
-                    <div class="tab-table__menu__item" data-item="all">all</div>
-                </div>
-                <div class="tab-table__section tab-table__section--active" data-section="pizza">
-                    <div class="grid grid--1 grid--md-3 grid--gap-large">
-                        <div class="menu-item menu-item--active">
-                            <div class="menu-item__top">
-                                <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg" alt="Pizza" />
-                                <div class="menu-item__name">pizza name</div>
-                            </div>
-                            <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                reiciendis ipsa voluptas ipsum ex dicta?</p>
-                            <div class="menu-item__sum">
-                                <div class="grid">
-                                    <div class="grid__6">
-                                        <div class="diet-icon diet-icon--vegan"></div>
-                                    </div>
-                                    <div class="grid__6 justify-self-end">
-                                        <span class="menu-item__sum__from">from</span> &pound;10<span
-                                            class="menu-item__sum__small">.99</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item menu-item--active">
-                            <div class="menu-item__top">
-                                <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg" alt="Pizza" />
-                                <div class="menu-item__name">other name</div>
-                            </div>
-                            <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                reiciendis ipsa voluptas ipsum ex dicta?</p>
-                            <div class="menu-item__sum">
-                                <div class="grid">
-                                    <div class="grid__6">
-                                        <div class="diet-icon diet-icon--vegatarian"></div>
-                                        <div class="diet-icon diet-icon--vegan"></div>
-                                        <div class="diet-icon diet-icon--spicy"></div>
-                                    </div>
-                                    <div class="grid__6 justify-self-end">
-                                        <span class="menu-item__sum__from">from</span> &pound;11<span
-                                            class="menu-item__sum__small">.99</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item menu-item--active">
-                            <div class="menu-item__top">
-                                <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg" alt="Pizza" />
-                                <div class="menu-item__name">other name</div>
-                            </div>
-                            <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                reiciendis ipsa voluptas ipsum ex dicta?</p>
-                            <div class="menu-item__sum">
-                                <div class="grid">
-                                    <div class="grid__6">
-                                        <div class="diet-icon diet-icon--vegatarian"></div>
-                                        <div class="diet-icon diet-icon--vegan"></div>
-                                        <div class="diet-icon diet-icon--spicy"></div>
-                                    </div>
-                                    <div class="grid__6 justify-self-end">
-                                        <span class="menu-item__sum__from">from</span> &pound;11<span
-                                            class="menu-item__sum__small">.99</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item menu-item--active">
-                            <div class="menu-item__top">
-                                <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg" alt="Pizza" />
-                                <div class="menu-item__name">other name</div>
-                            </div>
-                            <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                reiciendis ipsa voluptas ipsum ex dicta?</p>
-                            <div class="menu-item__sum">
-                                <div class="grid">
-                                    <div class="grid__6">
-                                        <div class="diet-icon diet-icon--vegatarian"></div>
-                                        <div class="diet-icon diet-icon--vegan"></div>
-                                        <div class="diet-icon diet-icon--spicy"></div>
-                                    </div>
-                                    <div class="grid__6 justify-self-end">
-                                        <span class="menu-item__sum__from">from</span> &pound;11<span
-                                            class="menu-item__sum__small">.99</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item menu-item--active">
-                            <div class="menu-item__top">
-                                <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg" alt="Pizza" />
-                                <div class="menu-item__name">other name</div>
-                            </div>
-                            <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                reiciendis ipsa voluptas ipsum ex dicta?</p>
-                            <div class="menu-item__sum">
-                                <div class="grid">
-                                    <div class="grid__6">
-                                        <div class="diet-icon diet-icon--vegatarian"></div>
-                                        <div class="diet-icon diet-icon--vegan"></div>
-                                        <div class="diet-icon diet-icon--spicy"></div>
-                                    </div>
-                                    <div class="grid__6 justify-self-end">
-                                        <span class="menu-item__sum__from">from</span> &pound;11<span
-                                            class="menu-item__sum__small">.99</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-item menu-item--active">
-                            <div class="menu-item__top">
-                                <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg" alt="Pizza" />
-                                <div class="menu-item__name">other name</div>
-                            </div>
-                            <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                reiciendis ipsa voluptas ipsum ex dicta?</p>
-                            <div class="menu-item__sum">
-                                <div class="grid">
-                                    <div class="grid__6">
-                                        <div class="diet-icon diet-icon--vegatarian"></div>
-                                        <div class="diet-icon diet-icon--vegan"></div>
-                                        <div class="diet-icon diet-icon--spicy"></div>
-                                    </div>
-                                    <div class="grid__6 justify-self-end">
-                                        <span class="menu-item__sum__from">from</span> &pound;11<span
-                                            class="menu-item__sum__small">.99</span>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="grid">
+                    <div class="grid__12 justify-self-md-end">
+                        <div class="flex flex--center flex--spaced">
+                            <div class="diet-icon diet-icon--x-margin diet-icon--vegan"></div>
+                            <span class="diet-icon__text color-green">Vegan</span>
+                            <div class="diet-icon diet-icon--x-margin diet-icon--vegatarian"></div>
+                            <span class="diet-icon__text color-green">Vegetarian</span>
+                            <div class="diet-icon diet-icon--x-margin diet-icon--spicy"></div>
+                            <span class="diet-icon__text color-red">Spicy</span>
                         </div>
                     </div>
                 </div>
-                <div class="tab-table__section" data-section="drinks">
-                    <div class="grid grid--3 grid--gap-large">
-                        <div class="menu-item">
-                            <div class="menu-item__top">
-                                <img class="menu-item__img m-auto" src="" alt="Pizza" />
-                                <div class="menu-item__name">drink one</div>
-                            </div>
-                            <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                reiciendis ipsa voluptas ipsum ex dicta?</p>
-                            <div class="menu-item__sum">
-                                <div class="grid">
-                                    <div class="grid__6">
-                                        <div class="diet-icon diet-icon--vegan"></div>
+
+                <div class="tab-table">
+                    <div class="tab-table__menu">
+                        <div class="tab-table__menu__item tab-table__menu__item--active" data-item="pizza">pizza</div>
+                        <div class="tab-table__menu__item" data-item="sides">sides</div>
+                        <div class="tab-table__menu__item" data-item="dessert">dessert</div>
+                        <div class="tab-table__menu__item" data-item="drinks">drinks</div>
+                        <div class="tab-table__menu__item" data-item="all">all</div>
+                    </div>
+                    <div class="tab-table__section tab-table__section--active" data-section="pizza">
+                        <div class="grid grid--1 grid--md-3 grid--gap-large">
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">the cherry and white</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>8<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
                                     </div>
-                                    <div class="grid__6 justify-self-end">
-                                        <span class="menu-item__sum__from">from</span> &pound;10<span
-                                            class="menu-item__sum__small">.99</span>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">the garlic goat</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>10<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">pepperoni straight</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>10<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">choked ham</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>10<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">the sailor</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>10<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">the veggie spesh</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>11<span
+                                                class="menu-item__sum__small">.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name menu-item__name--small">claytons maple squash</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>12<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">the old spot</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>13<span
+                                                class="menu-item__sum__small">.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">the bbq one</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>14<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">the big rock</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>13<span
+                                                class="menu-item__sum__small">.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item menu-item--active">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="./assets/images/menu-pizza.jpg"
+                                        alt="Pizza" />
+                                    <div class="menu-item__name">the ragging bull</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegatarian"></div>
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                            <div class="diet-icon diet-icon--spicy"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>15<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="menu-item">
-                            <div class="menu-item__top">
-                                <img class="menu-item__img m-auto" src="" alt="Pizza" />
-                                <div class="menu-item__name">drink two</div>
-                            </div>
-                            <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                reiciendis ipsa voluptas ipsum ex dicta?</p>
-                            <div class="menu-item__sum">
-                                <div class="grid">
-                                    <div class="grid__6">
-
+                    </div>
+                    <div class="tab-table__section" data-section="sides">
+                        <div class="grid grid--3 grid--gap-large">
+                            <div class="menu-item">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="" alt="Pizza" />
+                                    <div class="menu-item__name">skin on fries</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>3<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
                                     </div>
-                                    <div class="grid__6 justify-self-end">
-                                        <span class="menu-item__sum__from">from</span> &pound;11<span
-                                            class="menu-item__sum__small">.99</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="" alt="Pizza" />
+                                    <div class="menu-item__name">mediterranean style couscous</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>3<span
+                                                class="menu-item__sum__small">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                    <div class="menu-item__top">
+                                        <img class="menu-item__img m-auto" src="" alt="Pizza" />
+                                        <div class="menu-item__name">apple slaw</div>
+                                    </div>
+                                    <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Veniam
+                                        reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                    <div class="menu-item__sum">
+                                        <div class="grid">
+                                            <div class="grid__6">
+    
+                                            </div>
+                                            <div class="grid__6 justify-self-end">
+                                                <span class="menu-item__sum__from">&pound;</span>3<span
+                                                    class="menu-item__sum__small">.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-item">
+                                        <div class="menu-item__top">
+                                            <img class="menu-item__img m-auto" src="" alt="Pizza" />
+                                            <div class="menu-item__name">herby potatoes</div>
+                                        </div>
+                                        <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Veniam
+                                            reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                        <div class="menu-item__sum">
+                                            <div class="grid">
+                                                <div class="grid__6">
+        
+                                                </div>
+                                                <div class="grid__6 justify-self-end">
+                                                    <span class="menu-item__sum__from">&pound;</span>3<span
+                                                        class="menu-item__sum__small">.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="tab-table__section" data-section="dessert">
+                            <div class="grid grid--3 grid--gap-large">
+                                    <div class="menu-item">
+                                        <div class="menu-item__top">
+                                            <img class="menu-item__img m-auto" src="" alt="Pizza" />
+                                            <div class="menu-item__name">vanilla ice cream</div>
+                                        </div>
+                                        <p class="menu-item__desc"></p>
+                                        <div class="menu-item__sum">
+                                            <div class="grid">
+                                                <div class="grid__6">
+                                                    <div class="diet-icon diet-icon--vegan"></div>
+                                                </div>
+                                                <div class="grid__6 justify-self-end">
+                                                    <span class="menu-item__sum__from">&pound;</span>10<span
+                                                        class="menu-item__sum__small">.99</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="tab-table__section" data-section="drinks">
+                        <div class="grid grid--3 grid--gap-large">
+                            <div class="menu-item">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="" alt="Pizza" />
+                                    <div class="menu-item__name">drink one</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+                                            <div class="diet-icon diet-icon--vegan"></div>
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>10<span
+                                                class="menu-item__sum__small">.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item__top">
+                                    <img class="menu-item__img m-auto" src="" alt="Pizza" />
+                                    <div class="menu-item__name">drink two</div>
+                                </div>
+                                <p class="menu-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam
+                                    reiciendis ipsa voluptas ipsum ex dicta?</p>
+                                <div class="menu-item__sum">
+                                    <div class="grid">
+                                        <div class="grid__6">
+
+                                        </div>
+                                        <div class="grid__6 justify-self-end">
+                                            <span class="menu-item__sum__from">&pound;</span>11<span
+                                                class="menu-item__sum__small">.99</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -217,8 +454,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    ${require('./partials/footer.html')}
+        ${require('./partials/footer.html')}
     </div>
 </body>
 
