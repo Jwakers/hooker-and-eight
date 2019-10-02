@@ -32,7 +32,16 @@ module.exports = {
                             },
                         },
                         'css-loader',
-                        'sass-loader',
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                sourceMap: true,
+                                config: {
+                                    path: 'postcss.config.js'
+                                }
+                            }
+                        },
+                        'sass-loader'
                     ],
                 },
                 {
@@ -76,6 +85,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/find-us.html',
             filename: 'find-us.html'
-        })
+        }),
+        require('autoprefixer')
     ]
 }
