@@ -85,7 +85,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/find-us.html',
             filename: 'find-us.html'
-        }),
-        require('autoprefixer')
+        })
     ]
 }
