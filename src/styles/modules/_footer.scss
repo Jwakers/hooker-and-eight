@@ -16,10 +16,9 @@
         
         li {
             margin: .5rem 0;
-            cursor: pointer;
-            &:hover {
-                text-decoration: underline;
-            }
+        }
+        a:hover {
+            text-decoration: underline;
         }
     }
     &__copyright {
