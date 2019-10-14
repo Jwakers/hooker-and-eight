@@ -1,6 +1,6 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     &--gap {
         grid-gap: 1rem;
     }
@@ -11,22 +11,22 @@
         grid-template-columns: 1fr;
     }
     &--2 {
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
     }
     &--3 {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
     }
     &--5 {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     @include atMedium {
         &--md-4 {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
     @include atLarge {
         &--lg-5 {
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
     }
     &--align-center {
@@ -55,7 +55,7 @@
     }
     @include atMedium {
         &--md-3 {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr 1fr 1fr;
         }
         &__md-3 {
             grid-column: span 3;
