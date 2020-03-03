@@ -73,28 +73,28 @@ module.exports = {
             filename: '[name].css'
         }),
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './src/home.html',
             filename: 'index.html'
         }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/menu.html',
-        //     filename: 'menu.html'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/about.html',
-        //     filename: 'about.html'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/offers.html',
-        //     filename: 'offers.html'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/gallery.html',
-        //     filename: 'gallery.html'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: './src/find-us.html',
-        //     filename: 'find-us.html'
-        // })
+        new HtmlWebpackPlugin({
+            template: './src/menu.html',
+            filename: 'menu.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/about.html',
+            filename: 'about.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/offers.html',
+            filename: 'offers.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/gallery.html',
+            filename: 'gallery.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/find-us.html',
+            filename: 'find-us.html'
+        })
     ]
 }
