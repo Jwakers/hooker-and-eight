@@ -9,17 +9,8 @@
         }
     }
 
-    &--gradient-rainbow {
-        background-color: $lightGrey;
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 4px;
-            background-image: $rainbowGradient; 
-        }
+    &--grey {
+        background-image: linear-gradient(#eee, transparent);
     }
     &--angled {
         background-color: #fff;
@@ -29,7 +20,7 @@
             width: 100%;
             height: 60px;
             position: absolute;
-            bottom: -30px;
+            bottom: -26px;
             background-color: inherit;
             transform: skewY(-2deg);
             z-index: 1;

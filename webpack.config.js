@@ -85,10 +85,6 @@ module.exports = {
             filename: 'about.html'
         }),
         new HtmlWebpackPlugin({
-            template: './src/offers.html',
-            filename: 'offers.html'
-        }),
-        new HtmlWebpackPlugin({
             template: './src/gallery.html',
             filename: 'gallery.html'
         }),
