@@ -9,80 +9,57 @@
 </head>
 
 <body>
-        <div class="page-container">
-    <header class="header">
-        ${require('./partials/header.html')}
-    </header>
+    <div class="page-container">
+        <header class="header">
+            ${require('./partials/header.html')}
+        </header>
 
-    <div class="page-section page-section--top">
-        <div class="container">
-            <h1 class="heading heading--center heading--upper">gallery</h1>
+        <div class="page-section page-section--top">
+            <div class="container">
+                <h1 class="heading heading--center heading--upper">gallery</h1>
 
-            <div class="gallery grid grid--2 grid--md-4 grid--lg-5">
-                <div class="gallery__box" data-modal="./assets/images/dan-and-adam.jpg">
-                    <figure>
-                        <img class="gallery__img" src="./assets/images/dan-and-adam.jpg" />
-                        <figcaption class="gallery__caption">Very long image caption goes here so I can test the result of such a scenario</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery__box" data-modal="https://picsum.photos/id/964/800">
-                    <figure>
-                        <img class="gallery__img" src="https://picsum.photos/id/964/400" />
-                        <figcaption class="gallery__caption">Image caption here</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery__box" data-modal="https://picsum.photos/id/53/800">
-                    <figure>
-                        <img class="gallery__img" src="https://picsum.photos/id/53/400" />
-                        <figcaption class="gallery__caption">Image caption here</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery__box" data-modal="https://picsum.photos/id/35/800">
-                    <figure>
-                        <img class="gallery__img" src="https://picsum.photos/id/35/400" />
-                        <figcaption class="gallery__caption">Image caption here</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery__box" data-modal="https://picsum.photos/id/127/800">
-                    <figure>
-                        <img class="gallery__img" src="https://picsum.photos/id/127/400" />
-                        <figcaption class="gallery__caption">Image caption here</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery__box" data-modal="https://picsum.photos/id/12/800">
-                    <figure>
-                        <img class="gallery__img" src="https://picsum.photos/id/12/400" />
-                        <figcaption class="gallery__caption">Image caption here</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery__box" data-modal="https://picsum.photos/id/65/800">
-                    <figure>
-                        <img class="gallery__img" src="https://picsum.photos/id/65/400" />
-                        <figcaption class="gallery__caption">Image caption here</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery__box" data-modal="https://picsum.photos/id/96/800">
-                    <figure>
-                        <img class="gallery__img" src="https://picsum.photos/id/96/400" />
-                        <figcaption class="gallery__caption">Image caption here</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery__box" data-modal="https://picsum.photos/id/121/800">
-                    <figure>
-                        <img class="gallery__img" src="https://picsum.photos/id/121/400" />
-                        <figcaption class="gallery__caption">Image caption here</figcaption>
-                    </figure>
-                </div>
-                <div class="gallery__box" data-modal="https://picsum.photos/id/129/800">
-                    <figure>
-                        <img class="gallery__img" src="https://picsum.photos/id/129/400" />
-                        <figcaption class="gallery__caption">Image caption here</figcaption>
-                    </figure>
+                <div class="gallery grid grid--2 grid--md-4 grid--lg-5">
+                    <div class="gallery__box" data-modal="/assets/images/dan-and-adam.jpg">
+                        <figure>
+                            <img class="gallery__img" alt="Owners Dan and Adam posing at a pizza oven"
+                                src="./assets/images/dan-and-adam.jpg" />
+                            <figcaption class="gallery__caption">Very long image caption goes here so I can test the
+                                result of such a scenario</figcaption>
+                        </figure>
+                    </div>
+                    <div class="gallery__box" data-modal="/assets/images/classic-margherita-pizza.jpg">
+                        <figure>
+                            <img class="gallery__img" alt="Neopolitan margherita pizza"
+                                src="./assets/images/gallery/classic-margherita-pizza.jpg" />
+                            <figcaption class="gallery__caption">Margherita pizza</figcaption>
+                        </figure>
+                    </div>
+                    <div class="gallery__box" data-modal="/assets/images/gloucester-rugby.jpg">
+                        <figure>
+                            <img class="gallery__img" alt="Glouceter rugby team eating at Hooker & Eight - 2019"
+                                src="./assets/images/gallery/gloucester-rugby.jpg" />
+                            <figcaption class="gallery__caption">Glouceter rugby team at Hooker & Eight - 2019
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="gallery__box" data-modal="/assets/images/outside-shot.jpg">
+                        <figure>
+                            <img class="gallery__img" alt="Hooker and Eight owners posing in front of building"
+                                src="./assets/images/gallery/outside-shot.jpg" />
+                            <figcaption class="gallery__caption"></figcaption>
+                        </figure>
+                    </div>
+                    <div class="gallery__box" data-modal="/assets/images/tubby-toms-at-hooker-and-eight.jpg">
+                        <figure>
+                            <img class="gallery__img" alt="Many bottles of TubbyToms sauces"
+                                src="./assets/images/gallery/tubby-toms-at-hooker-and-eight.jpg" />
+                            <figcaption class="gallery__caption">TubbyToms sauces.</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    ${require('./partials/footer.html')}
+        ${require('./partials/footer.html')}
     </div>
 </body>
 

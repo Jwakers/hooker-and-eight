@@ -8,12 +8,6 @@ export default class ModalBox {
         this.indexMax = this.allSources.length;
         this.init();
     }
-    addEvents() {
-        console.log(this.allSources, this.currentIndex, this.indexMax);
-        this.elements.forEach(el => {
-            el.addEventListener('click', this.openModal.bind(this))
-        })
-    }
     getMarkup(el) {
         const src = el.getAttribute(this.modalSource);
         const figCaption = el.querySelector('.gallery__caption');
@@ -82,7 +76,9 @@ export default class ModalBox {
         modalCaption.innerHTML = this.allCaptions[this.currentIndex].innerHTML;
         console.log(this.allCaptions);
     }
-    init () {
-        this.addEvents();
+    init() {
+        this.elements.forEach(el => {
+            el.addEventListener('click', this.openModal.bind(this))
+        })
     }
 }

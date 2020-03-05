@@ -12,11 +12,7 @@ import StickyHeader from './scripts/modules/StickyHeader';
 import MenuTable from './scripts/modules/MenuTable';
 import ModalBox from './scripts/modules/ModalBox';
 
-import './assets/menu.pdf';
-
 new MobileMenu();
-
-const mapElement = document.querySelector('.google-map');
 
 new ShowOnScroll();
 new StickyHeader();
