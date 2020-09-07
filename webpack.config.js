@@ -73,7 +73,7 @@ module.exports = {
             filename: '[name].css'
         }),
         new HtmlWebpackPlugin({
-            template: './src/home.html',
+            template: './src/index.html',
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
