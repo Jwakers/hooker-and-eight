@@ -12,6 +12,8 @@ import StickyHeader from './scripts/modules/StickyHeader';
 import MenuTable from './scripts/modules/MenuTable';
 import ModalBox from './scripts/modules/ModalBox';
 
+import video from './assets/video/pizza.mp4';
+
 new MobileMenu();
 
 new ShowOnScroll();
