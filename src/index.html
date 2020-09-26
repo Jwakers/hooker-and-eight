@@ -5,75 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <meta name="description" content="Hooker and Eight, handmade Neapolitan style pizza in the heart of glouceter.">
-
     <title>Hooker &amp; Eight</title>
 </head>
 
 <body>
     <div class="page-container">
-        <!-- <header class="header">
-            ${require('./partials/header-temp.html')}
-        </header> -->
-        <div class="container">
-            <div style="padding-top: 1rem;">
-                <div class="grid">
-                    <div class="grid__12 grid__md-6">
-                        <img src="./assets/images/main-logo.jpg" alt="hooker and Eight logo" />
-                    </div>
-                    <div class="grid__12 grid__md-6">
-                        <h1 class="heading">Hooker &amp; Eight</h1>
-                        <span class="glf-button" data-glf-cuid="4fb0fb85-1362-4f6e-92b9-705b22814f18"
-                            data-glf-ruid="f7220aa7-9342-4482-a162-2664ecf3b30f"> See MENU & Order</span>
-                        <!-- <span class="glf-button reservation" data-glf-cuid="4fb0fb85-1362-4f6e-92b9-705b22814f18"
-                            data-glf-ruid="f7220aa7-9342-4482-a162-2664ecf3b30f" data-glf-reservation="true"> Table
-                            Reservation</span> -->
-                        <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
-                        <p>Welcome to Hooker &amp; Eight. Our website is under construction and will be fully available
-                            very soon. In the mean time why dont you come along and see what we have to offer!</p>
-                        <h2 class="heading heading--small">How to book</h2>
-                        <p>Currently we can only take bookings of up to 6 people per table.</p>
-
-                        <p>To book a table call the restaurant on <a href="tel:01452690829">01452 690829</a> or book via <a href="mailto:hookerand8@gmail.com">hookerand8@gmail.com</a>.</p>
-                        <!-- <p>If you want to book a table with us, give us a call on <a href="tel:01452690829">01452 690
-                                829</a>. <br />Alternatively you can come along on and we will get a table ready for
-                            you as soon as one is available. We recommend booking for groups larger than four.</p>
-                        <p>You can download our menu <a href="./assets/menu.pdf" title="Download menu"
-                                target="_blank">here</a> for a preview of what we have
-                            in store for you. We cover a variety of dietry requirements including vegan and gluten free
-                        </p>
-                        <p><em>Please can those with gluten allergies pre-book so we can be sure to prepare our gluten
-                                free dough ahead of time.</em></p>
-
-                        <p>
-                            <script>document.write('<' + 'a' + ' ' + 'h' + 'r' + 'e' + 'f' + '=' + "'" + 'm' + 'a' + 'i' + 'l' + '&' + '#' + '1' + '1' + '6' + ';' + 'o' + '&' + '#' + '5' + '8' + ';' +
-                                    'h' + 'o' + 'o' + '%' + '6' + 'B' + '%' + '6' + '&' + '#' + '5' + '3' + ';' + '%' + '7' + '2' + 'a' + 'n' + 'd' + '%' + '3' + '8' + '&' + '#' + '6' +
-                                    '4' + ';' + 'g' + '%' + '6' + '&' + '#' + '6' + '8' + ';' + 'a' + 'i' + 'l' + '&' + '#' + '4' + '6' + ';' + 'c' + 'o' + 'm' + "'" + '>' + 'h' + 'o' +
-                                    'o' + 'k' + 'e' + 'r' + 'a' + 'n' + 'd' + '8' + '&' + '#' + '6' + '4' + ';' + '&' + '#' + '1' + '0' + '3' + ';' + 'm' + 'a' + 'i' + 'l' + '&' + '#' +
-                                    '4' + '6' + ';' + 'c' + 'o' + 'm' + '<' + '/' + 'a' + '>');</script><noscript>[Turn
-                                on JavaScript to
-                                see the email address]</noscript></p> -->
-                        <h3 class="heading heading--small">Where to find us</h3>
-                        <ul class="mono-list">
-                            <li>Hooker &amp; Eight</li>
-                            <li>49 Westgate Street</li>
-                            <li>Gloucester</li>
-                            <li>GL1 2NW</li>
-                        </ul>
-                    </div>
+        <header class="header header--home">
+            ${require('./partials/header.html')}
+        </header>
+        <div class="hero">
+            <div class="hero__con">
+                <h1 class="hero__con__head">handmade pizza</h1>
+                <div class="hero__con__sub">the way it was intended</div>
+                <div class="hero__con__btns">
+                    <!-- <a href="./menu.html" class="btn btn--wide">menu</a> -->
+                    <span class="btn btn--wide" data-glf-cuid="4fb0fb85-1362-4f6e-92b9-705b22814f18" data-glf-ruid="f7220aa7-9342-4482-a162-2664ecf3b30f">menu</span>
+                    <a href="./find-us.html" class="btn btn--wide btn--white">find us</a>
                 </div>
-                <!-- <div class="relative-center d-inline-block" style="padding: 2rem 0">
-                    <a href="tel:01452690829" title="Call Hooker and Eight" class="btn btn--wide btn--grey">call</a>
-                    <a href="./assets/menu.pdf" download target="_blank" title="Download menu"
-                        class="btn btn--wide btn--white">menu</a>
-                </div> -->
-                <!-- If you would like to customize the button, remove or change the "class" attribute inside the <span> tag -->
-
             </div>
         </div>
-        ${require('./partials/footer-temp.html')}
+
+        <div class="page-section page-section--grey">
+
+            <div class="container">
+                <div class="grid grid--1 grid--md-3 grid--gap">
+                    <div class="box box--m-top show-on-scroll">
+                        <img class="box__img box__img--circle" src="./assets/images/handmade-pizza.jpg" alt="Hand-rolling pizza dough" />
+                        <h3 class="box__head box__head--underline">All fresh, all handmade</h3>
+                        <p>Our ingredients are the heart of what makes are food so great, most of which are sourced locally. We also use some of the finest traditional italian ingredient for the most authentic taste.</p>
+                    </div>
+
+                    <div class="box box--m-top show-on-scroll show-on-scroll--delay-1">
+                        <img class="box__img box__img--circle" src="./assets/images/veggie-pizza.jpg" alt="Hand-rolling pizza dough" />
+                        <h3 class="box__head box__head--underline  box__head--underline--green">Vegatarian &amp; vegan options
+                        </h3>
+                        <p>We have some of the best vegan and vegatarian options you'll find in Gloucetershire! Almost all of our pizzas can be <em>veganized</em>. Using faux meats, vegan pestos and our freshly made almond ricotta. No matter what your taste,
+                            we've got you covered.</p>
+                    </div>
+
+                    <div class="box box--m-top show-on-scroll show-on-scroll--delay-2">
+                        <img class="box__img box__img--circle" src="./assets/images/gloucester-rugby-eating-in.jpg" alt="Hand-rolling pizza dough" />
+                        <h3 class="box__head box__head--underline  box__head--underline--blue">Dont just take our word it.</h3>
+                        <p>"I gotta be honest, I didn’t think the experience would live up to the hype, how wrong I was."</p>
+                        <p>"Simply the best pizza around"</p>
+                        <p>"Best pizza I have had EVER! So so tasty! Dan and the team we’re amazing and super friendly. Can’t wait to return. Thank you ❤️"</p>
+                        <p>Find more reviews like these on our <a href="https://www.tripadvisor.co.uk/Restaurant_Review-g187047-d19141578-Reviews-or10-Hooker_Eight-Gloucester_Cotswolds_England.html">Tripadvisor page.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="grid__12 grid__md-6 background-img">
+            </div>
+            <div class="grid__12 grid__md-6">
+                <div class="brand-background">
+                    <div class="container container--half-right show-on-scroll">
+                        <h2 class="heading">A little bit about us...</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam consectetur quasi tempore alias recusandae dicta temporibus illum, reiciendis autem molestias, soluta ratione ducimus nostrum debitis neque ut error, fuga repellat.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus autem dolore ea, error sunt accusamus quaerat totam ut blanditiis et veritatis eos itaque incidunt magni dolor nisi! Et veniam eveniet, labore esse fugit
+                            repellendus!
+                        </p>
+                        <a class="btn btn--wide relative-center relative-center--mob">the whole story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <div class="container">
+                <div class="grid grid--gap show-on-scroll">
+                    <div class="grid__12 grid__md-6">
+                        <div class="container container--half-left">
+                            <h3 class="heading">So what are you waiting for?</h3>
+                            <ul class="mono-list">
+                                <li>hooker & eight</li>
+                                <li>49 westgate street</li>
+                                <li>gloucester</li>
+                                <li>gl1 2nw</li>
+                                <li><a href="tel:01452690829">01452 690 829</a></li>
+                            </ul>
+                            <a href="./find-us.html" class="btn btn--grey btn--t-margin relative-center relative-center--mob">contact us</a>
+                        </div>
+                    </div>
+
+                    <div class="grid__12 grid__md-6">
+                        <div class="google-map">
+                            <iframe class="google-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2463.7125080481987!2d-2.249885383510918!3d51.86620537969575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871067b34a09c6b%3A0xa4117924a538b6cd!2s49%20Westgate%20St%2C%20Gloucester%20GL1%202NW!5e0!3m2!1sen!2suk!4v1569517171736!5m2!1sen!2suk"
+                                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        ${require('./partials/footer.html')}
     </div>
+    <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
 </body>
 
 </html>

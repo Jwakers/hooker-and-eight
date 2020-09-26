@@ -77,8 +77,8 @@ module.exports = {
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
-            template: './src/menu.html',
-            filename: 'menu.html'
+            template: './src/offers.html',
+            filename: 'offers.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/about.html',
