@@ -1,0 +1,19 @@
+.floating-image {
+    display: inline-block;
+    padding: .6rem 1rem;
+    @include atMedium {
+        max-width: 50%;
+    }
+    &--left {
+        float: left;
+        @include atMedium {
+            padding-left: 0;
+        }
+    }
+    &--right {
+        float: right;
+        @include atMedium {
+            padding-right: 0;
+        }
+    }
+}
