@@ -11,9 +11,9 @@ import ShowOnScroll from './scripts/modules/ShowOnScroll';
 import StickyHeader from './scripts/modules/StickyHeader';
 import MenuTable from './scripts/modules/MenuTable';
 import ModalBox from './scripts/modules/ModalBox';
-import SetHeroHeight from './scripts/modules/SetHeroHeight'
+import HandleHero from './scripts/modules/HandleHero'
 
-import video from './assets/video/pizza.mp4';
+import video from './assets/video/hero-video-comp.mp4';
 
 new MobileMenu();
 
@@ -21,4 +21,4 @@ new ShowOnScroll();
 new StickyHeader();
 new MenuTable();
 new ModalBox('.gallery__box', 'data-modal');
-new SetHeroHeight();
+new HandleHero();
