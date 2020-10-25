@@ -7,11 +7,9 @@ $darkGreen: #17a32c;
 $lightGreen: #1bbd32;
 $darkGrey: #212121;
 $lightGrey: #eee;
-
 $redGradient: linear-gradient(60deg, $lightRed, $darkRed);
 $blueGradient: linear-gradient(60deg, $lightBlue, $darkBlue);
 $greenGradient: linear-gradient(60deg, $lightGreen, $darkGreen);
 $rainbowGradient: linear-gradient(90deg, $mainRed, $lightGreen, $lightBlue);
-
 $shadow: 2px 2px 4px rgba(0, 0, 0, .4);
-$lightShadow: 4px 0 10px rgba(0, 0, 0, .1);
+$lightShadow: 2px 2px 4px rgba(0, 0, 0, 0.1);

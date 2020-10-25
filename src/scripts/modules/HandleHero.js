@@ -3,7 +3,7 @@ export default class HandleHero {
         this.hero = document.querySelector(".hero");
         this.video = this.hero.querySelector(".hero__video");
         this.innerHeight = window.innerHeight;
-        this.mobileWidth = 768;
+        this.mobileWidth = 576;
         this.videoShowing = false;
         this.init();
     }
@@ -15,7 +15,7 @@ export default class HandleHero {
         }
     }
     setHeight() {
-        if (window.innerWidth >= 768) {
+        if (window.innerWidth >= this.mobileWidth) {
             this.hero.style.height = null;
         } else {
             this.hero.style.height = `${this.innerHeight}px`;
@@ -23,12 +23,15 @@ export default class HandleHero {
     }
     showHeroVideo() {
         const source = this.video.querySelector("source");
-        console.log(this.video, source.dataset.src);
         source.setAttribute("src", source.dataset.src);
         source.removeAttribute("data-src");
         try {
             this.video.load()
+            this.video.classList.add('hero__video--loaded');
             this.videoShowing = true;
+            this.video.addEventListener("timeupdate", function() {
+                if (this.currentTime > 43) this.pause()
+            })
         } catch(err) {
             console.log(err)
         }

@@ -13,11 +13,12 @@
 }
 
 .hero {
-    height: 100vh;
     position: relative;
+    height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
-    @include atXlarge {
-        max-height: 1000px;
+    @include atSmall {
+        height: auto;
     }
     &::before {
         content: "";
@@ -32,19 +33,28 @@
         top: 0;
         max-height: 100vh;
         height: 100vh;
+        opacity: 0;
+        transition: opacity 1s;
+        will-change: opacity;
         @include center-x;
-        @include atMedium {
+        @include atSmall {
             display: none;
             width: 100%;
             height: auto;
             max-height: none;
         }
+        &--loaded {
+            opacity: 1;
+        }
     }
     &__image {
         display: block;
-        width: 100%;
-        height: auto;
-        max-height: none;
+        height: 100%;
+        max-width: none;
+        @include atSmall {
+            min-width: 100%;
+            height: auto;
+        }
     }
     &__mouse {
         position: absolute;

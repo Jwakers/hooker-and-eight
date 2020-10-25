@@ -2,7 +2,7 @@
     padding: .1rem 0;
     width: 100%;
     z-index: 10;
-    background-color: $darkGrey; 
+    background-color: $darkGrey;
     transition: .4s;
     position: fixed;
     @include atMedium {
@@ -10,7 +10,8 @@
     }
     &__logo {
         max-width: 100%;
-        transition: 0.4s;
+        padding: 0.2rem 0;
+        transition: .4s;
     }
     &--home {
         background-color: initial;

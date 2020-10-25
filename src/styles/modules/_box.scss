@@ -4,31 +4,41 @@
     padding: 1.2rem;
     position: relative;
     background-color: #fff;
-
-    &--m-top {
-        margin-top: 125px;
+    overflow: hidden;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(#fff 60%, transparent);
+        z-index: 2;
+    }
+    &--pad-bottom {
+        padding-bottom: 4rem;
     }
     &__img {
-
-        &--circle {
-            position: relative;
-            display: block;
-            overflow: hidden;
-            @include center-x;
-            top: -144px;
-            margin-bottom: -144px;
-            width: 250px;
-            max-height: 250px;
-            border-radius: 50%;
-            border: solid 8px white;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-radius: 6px;
+        z-index: 1;
+        opacity: 0.6;
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        p {
+            text-shadow: 1px 1px 0px #fff;
         }
     }
-
     &__head {
         font-family: los-feliz, serif;
         letter-spacing: 1px;
         text-align: center;
-
         &--underline {
             &::after {
                 content: '';
