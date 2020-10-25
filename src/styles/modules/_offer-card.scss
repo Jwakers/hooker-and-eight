@@ -1,0 +1,19 @@
+.offer-card {
+    border-radius: 6px;
+    border-top: 4px solid $mainRed;
+    box-shadow: $lightShadow;
+    padding: 1.2rem;
+    position: relative;
+    &__head {
+        font-family: los-feliz, serif;
+        font-size: 2em;
+    }
+    &__body {
+        margin: 0.8rem 0;
+        line-height: 1.2;
+    }
+    &__small {
+        margin-top: 1rem;
+        font-size: 0.8em;
+    }
+}

@@ -1,87 +1,59 @@
 .grid {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    @mixin grid-modifier($mod) {
+        @for $denominator from 1 to 13 {
+            @if ($mod) {
+                &--#{$mod}-#{$denominator} {
+                    grid-template-columns: repeat(#{$denominator}, 1fr);
+                }
+            }
+            @else {
+                &--#{$denominator} {
+                    grid-template-columns: repeat(#{$denominator}, 1fr);
+                }
+            }
+        }
+    }
+    @mixin grid-span($mod) {
+        @for $denominator from 1 to 13 {
+            @if ($mod) {
+                &__md-#{$denominator} {
+                    grid-column: span #{$denominator};
+                }
+            }
+            @else {
+                &__#{$denominator} {
+                    grid-column: span #{$denominator};
+                }
+            }
+        }
+    }
     &--gap {
         grid-gap: 1rem;
     }
     &--gap-large {
         grid-gap: 2.4rem;
     }
-    &--1 {
-        grid-template-columns: 1fr;
-    }
-    &--2 {
-        grid-template-columns: 1fr 1fr;
-    }
-    &--3 {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    &--5 {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    @include atMedium {
-        &--md-4 {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-    }
-    @include atLarge {
-        &--lg-5 {
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        }
-    }
     &--align-center {
         align-items: center;
     }
-    &__4 {
-        grid-column: span 4;
-    }
-    &__5 {
-        grid-column: span 5;
-    }
-    &__6 {
-        grid-column: span 6;
-    }
-    &__7 {
-        grid-column: span 7;
-    }
-    &__8 {
-        grid-column: span 8;
-    }
-    &__12 {
-        grid-column: span 12;
-    }
-    @include atSmall {
-
-    }
+    @include grid-span(false);
+    @include grid-modifier(false);
     @include atMedium {
-        &--md-3 {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        &__md-3 {
-            grid-column: span 3;
-        }
-        &__md-6 {
-            grid-column: span 6;
-        }
-        &__md-9 {
-            grid-column: span 9;
-        }
+        @include grid-modifier('md');
+        @include grid-span('md');
     }
     @include atLarge {
-        &__lg-5 {
-            grid-column: span 5;
-        }
-        &__lg-6 {
-            grid-column: span 6;
-        }
-        &__lg-7 {
-            grid-column: span 7;
-        }
+        @include grid-modifier('lg');
+        @include grid-span('lg');
     }
 }
+
 .justify-self-end {
     justify-self: end;
 }
+
 .justify-self-md-end {
     @include atMedium {
         justify-self: end;

@@ -62,23 +62,13 @@ module.exports = {
                     {
                         loader: "url-loader",
                         options: {
-                            name: "[name].[ext]",
+                            name: "[folder]/[name].[ext]",
                             limit: 8192,
                             outputPath: "assets/images",
                         },
                     },
                 ],
             },
-            // {
-            //     test: /\.pdf$/,
-            //     use: [{
-            //         loader: 'file-loader',
-            //         options: {
-            //             name: '[name].[ext]',
-            //             outputPath: 'assets'
-            //         }
-            //     }]
-            // }
         ],
     },
     plugins: [

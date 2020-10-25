@@ -38,6 +38,8 @@ export default class HandleHero {
     }
 
     init() {
+        if(!this.hero) return;
+        
         this.setHeight();
         this.handleResize();
         window.addEventListener("resize", () => {
