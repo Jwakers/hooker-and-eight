@@ -75,8 +75,12 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].[contenthash].css",
         }),
+        // new HtmlWebpackPlugin({
+        //     template: "./src/index.html",
+        //     filename: "index.html",
+        // }),
         new HtmlWebpackPlugin({
-            template: "./src/index.html",
+            template: "./src/legacy-landing.html",
             filename: "index.html",
         }),
         new HtmlWebpackPlugin({
