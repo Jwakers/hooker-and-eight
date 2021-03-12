@@ -4,9 +4,12 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: {
+        index: "./src/index.js",
+        home: "./src/home-page-index.js"
+    },
     output: {
-        filename: "bundle.[contenthash].js",
+        filename: "[name].bundle.[contenthash].js",
         path: path.resolve(__dirname, "docs"),
     },
     devtool: "source-map",
@@ -75,29 +78,33 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].[contenthash].css",
         }),
+        new HtmlWebpackPlugin({
+            template: "./src/index.html",
+            filename: "index.html",
+        }),
         // new HtmlWebpackPlugin({
-        //     template: "./src/index.html",
+        //     template: "./src/legacy-landing.html",
         //     filename: "index.html",
         // }),
         new HtmlWebpackPlugin({
-            template: "./src/legacy-landing.html",
-            filename: "index.html",
-        }),
-        new HtmlWebpackPlugin({
-            template: "./src/offers.html",
-            filename: "offers.html",
-        }),
-        new HtmlWebpackPlugin({
             template: "./src/about.html",
             filename: "about.html",
+            excludeChunks: ["home"]
         }),
         new HtmlWebpackPlugin({
             template: "./src/gallery.html",
             filename: "gallery.html",
+            excludeChunks: ["home"]
         }),
         new HtmlWebpackPlugin({
             template: "./src/find-us.html",
             filename: "find-us.html",
+            excludeChunks: ["home"]
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/openside.html",
+            filename: "openside.html",
+            excludeChunks: ["home"]
         }),
         new CleanWebpackPlugin(),
     ],

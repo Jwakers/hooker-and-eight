@@ -1,12 +1,14 @@
 export default class ModalBox {
-    constructor(elements, modalSource) {
+    constructor(elements, modalSource, renderGallery = false, imageArray = false) {
         this.elements = document.querySelectorAll(elements);
         this.modalSource = modalSource;
         this.allSources = Array.from(this.elements).map(el => el.getAttribute(modalSource));
         this.allCaptions = Array.from(this.elements).map(el => el.querySelector('.gallery__caption'));
         this.currentIndex = 0;
         this.indexMax = this.allSources.length;
-        this.init();
+        this.renderGallery = renderGallery;
+        this.imageArray = imageArray;
+        this.init(elements);
     }
     getMarkup(el) {
         const src = el.getAttribute(this.modalSource);
@@ -76,7 +78,37 @@ export default class ModalBox {
         modalCaption.innerHTML = this.allCaptions[this.currentIndex].innerHTML;
         console.log(this.allCaptions);
     }
-    init() {
+
+    renderGalleryMarkup() {
+        const gallery = document.querySelector('.gallery');
+        const paths = {
+            root: 'https://res.cloudinary.com/drgquplia/image/upload/',
+            mods: {
+                small: 'c_fill,g_center,h_220,w_220/',
+                large: 'w_900'
+            },
+            path: '/v1615569548/hooker-and-eight/gallery/'
+        }
+        let totalMarkup = '';
+        this.imageArray.forEach(img => {
+            const markup = `
+            <div class="gallery__box" data-modal="${paths.root}${paths.mods.large}${paths.path}${img}">
+                <figure>
+                    <img class="gallery__img" alt="${img}" src="${paths.root}${paths.mods.small}${paths.path}${img}" />
+                    <figcaption class="gallery__caption">${img}</figcaption>
+                </figure>
+            </div>`;
+            totalMarkup+= markup;
+        })
+        gallery.innerHTML = totalMarkup;
+    }
+
+    init(elements) {
+        console.log(this)
+        if (this.renderGallery) {
+            this.renderGalleryMarkup();
+            this.elements = document.querySelectorAll(elements);
+        }
         this.elements.forEach(el => {
             el.addEventListener('click', this.openModal.bind(this))
         })
