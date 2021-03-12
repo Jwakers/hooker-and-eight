@@ -6,26 +6,20 @@
         padding-bottom: 348px;
     }
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
     position: relative;
-
     &--half-right {
         max-width: 600px;
         margin: 0;
-        padding-right: 0;
-        @include atMedium {
-            padding-left: 5rem;
-        }
+        margin-right: auto;
     }
     &--half-left {
         max-width: 600px;
         margin: 0;
-        padding-left: 0;
-        @include atMedium {
-            padding-right: 5rem;
-        }
+        margin-left: auto;
     }
 }

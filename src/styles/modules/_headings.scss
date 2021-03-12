@@ -1,12 +1,11 @@
 .heading {
     font-family: los-feliz, serif;
+    margin: 1rem 0;
     letter-spacing: 2px;
     font-size: 1.4em;
-
     @include atSmall {
         font-size: 2em;
     }
-
     &--small {
         font-size: 1.2rem;
         @include atSmall {
@@ -15,12 +14,31 @@
         @include atMedium {
             font-size: 1.6rem;
         }
-
     }
     &--upper {
         text-transform: uppercase;
     }
     &--center {
         text-align: center
+    }
+    &--notop {
+        margin-top: 0;
+    }
+    &--underline {
+        &::after {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 4px;
+            background-image: $redGradient;
+            border-radius: 0 10px 0 10px;
+            margin-top: 0.6rem;
+        }
+        &--green::after {
+            background-image: $greenGradient;
+        }
+        &--blue::after {
+            background-image: $blueGradient;
+        }
     }
 }
