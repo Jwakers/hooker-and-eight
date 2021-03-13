@@ -3,19 +3,20 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 1;
     &--handmade {
-        background-image: url('https://res.cloudinary.com/drgquplia/image/upload/c_scale,w_700/v1615569532/hooker-and-eight/gallery/H_8-130_iiqn5d.jpg');
+        background-image: url('https://res.cloudinary.com/drgquplia/image/upload/c_scale,w_700/v1615569532/hooker-and-eight/gallery/pizza-ready-for-the-oven.jpg');
     }
     &--veggie {
-        background-image: url('https://res.cloudinary.com/drgquplia/image/upload/c_scale,w_700/v1615569532/hooker-and-eight/gallery/H_8-21_htpfqx.jpg');
+        background-image: url('https://res.cloudinary.com/drgquplia/image/upload/c_scale,w_700/v1615569532/hooker-and-eight/gallery/vegetable-ingredients.jpg');
     }
     &--reviews {
         background-position: bottom;
-        background-image: url('https://res.cloudinary.com/drgquplia/image/upload/c_scale,w_700/v1615569532/hooker-and-eight/gallery/H_8-150_kmd08m.jpg');
+        background-image: url('https://res.cloudinary.com/drgquplia/image/upload/c_scale,w_700/v1615569532/hooker-and-eight/gallery/happy-patrons-at hooker-and-eight.jpg');
     }
     &--logo {
         background-size: contain;
-        background-image: url('../assets/images/brand/main-logo.jpg');
+        background-image: url('https://res.cloudinary.com/drgquplia/image/upload/v1615644728/hooker-and-eight/brand/main-logo.png');
     }
     &--cover {
         &::after {

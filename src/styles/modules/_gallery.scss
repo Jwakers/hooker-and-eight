@@ -20,6 +20,7 @@
     }
     &__caption {
         position: absolute;
+        text-transform: capitalize;
         bottom: 0;
         left: 0;
         padding: 1rem;

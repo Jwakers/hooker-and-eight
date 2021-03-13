@@ -1,5 +1,5 @@
 export default class ShowOnScroll {
-  constructor(elements, callback) {
+  constructor() {
     this.init()
   }
 

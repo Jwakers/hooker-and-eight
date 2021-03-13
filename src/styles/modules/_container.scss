@@ -12,14 +12,16 @@
     margin: 0 auto;
     padding: 0 2rem;
     position: relative;
-    &--half-right {
-        max-width: 600px;
-        margin: 0;
-        margin-right: auto;
-    }
-    &--half-left {
-        max-width: 600px;
-        margin: 0;
-        margin-left: auto;
+    @include atMedium {
+        &--half-right {
+            max-width: 600px;
+            margin: 0;
+            margin-right: auto;
+        }
+        &--half-left {
+            max-width: 600px;
+            margin: 0;
+            margin-left: auto;
+        }
     }
 }

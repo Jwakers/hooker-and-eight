@@ -5,8 +5,8 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        index: "./src/index.js",
-        home: "./src/home-page-index.js"
+        index: "./src/scripts/index.js",
+        home: "./src/scripts/home-page-index.js"
     },
     output: {
         filename: "[name].bundle.[contenthash].js",
