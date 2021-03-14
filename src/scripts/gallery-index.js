@@ -1,0 +1,35 @@
+import Gallery from './modules/Gallery';
+
+const galleryImages = [
+    'happy-patrons-at hooker-and-eight',
+    'dan-prepping-pizza',
+    'sprinkling-cheese',
+    'steve-on-the-pizza-peel',
+    'pizza-ready-for-the-oven',
+    'pizza-on-pizza-peel',
+    'two-takeaway-pizzas',
+    'calzone-on-plate',
+    'meaty-pizza',
+    'pizza-transferring-to-plate',
+    'steve-prepping-calzone',
+    'adam-enjoying-cleaning',
+    'happy-dan',
+    'fully-loaded-calzone-ready-to-fold',
+    'hooker-and-eight-front-window',
+    'hooker-and-eight-front-at-night',
+    'prepping-mushroom-pizza',
+    'pizza-wheel-cutting',
+    'finishing-with-balsamic-glaze',
+    'hooker-and-eight-owners-and-staff',
+    'this-is-normal',
+    'hooker-and-eight-mirror',
+    'steve-weighing-dough',
+    'rugby-shirt-decoration',
+    'dan-getting-started-on-a-pizza',
+    'dan-showcasing-handmade-doughs',
+    'shaping-the-dough',
+    'vegetable-ingredients',
+    'hooker-and-eight-restaurant-interior',
+]
+
+new Gallery(galleryImages);

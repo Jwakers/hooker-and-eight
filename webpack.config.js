@@ -6,7 +6,8 @@ const path = require("path");
 module.exports = {
     entry: {
         index: "./src/scripts/index.js",
-        home: "./src/scripts/home-page-index.js"
+        home: "./src/scripts/home-page-index.js",
+        gallery: "./src/scripts/gallery-index.js"
     },
     output: {
         filename: "[name].bundle.[contenthash].js",
@@ -81,6 +82,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             filename: "index.html",
+            excludeChunks: ["gallery"]
         }),
         // new HtmlWebpackPlugin({
         //     template: "./src/legacy-landing.html",
@@ -89,7 +91,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/about.html",
             filename: "about.html",
-            excludeChunks: ["home"]
+            excludeChunks: ["home", "gallery"]
         }),
         new HtmlWebpackPlugin({
             template: "./src/gallery.html",
@@ -99,12 +101,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/find-us.html",
             filename: "find-us.html",
-            excludeChunks: ["home"]
+            excludeChunks: ["home", "gallery"]
         }),
         new HtmlWebpackPlugin({
             template: "./src/openside.html",
             filename: "openside.html",
-            excludeChunks: ["home"]
+            excludeChunks: ["home", "gallery"]
         }),
         new CleanWebpackPlugin(),
     ],
