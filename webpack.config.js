@@ -10,7 +10,7 @@ module.exports = {
         gallery: "./src/scripts/gallery-index.js"
     },
     output: {
-        filename: "[name].bundle.[contenthash].js",
+        filename: "[name].bundle.js?v=[contenthash]",
         path: path.resolve(__dirname, "docs"),
     },
     devtool: "source-map",
@@ -77,7 +77,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name].[contenthash].css",
+            filename: "[name].css?v=[contenthash]",
         }),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
